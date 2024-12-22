@@ -58,9 +58,13 @@ if __name__ == "__main__":
     logger = create_logger(
         name="MyAppLogger", log_file="logs/app.log", level=logging.DEBUG
     )
+
     # Log messages
-    logger.debug("This is a DEBUG message.")
-    logger.info("This is an INFO message.")
-    logger.warning("This is a WARNING message.")
-    logger.error("This is an ERROR message.")
-    logger.critical("This is a CRITICAL message.")
+    logger.info("Application started.")
+    try:
+        # Intentionally trigger an exception
+        result = 10 / 0
+    except Exception as e:
+        logger.error("An exception occurred:", exc_info=True)  # Log exception details
+
+    logger.info("Application finished.")

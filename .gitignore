@@ -145,7 +145,8 @@ venv.bak/
 
 # mkdocs documentation
 /site
-
+.sshkey
+.sshkey.pub
 # mypy
 .mypy_cache/
 .dmypy.json

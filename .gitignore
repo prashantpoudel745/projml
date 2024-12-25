@@ -135,8 +135,8 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-.sshkey/
-.sshkey.pub/
+sshkey
+sshkey.pub
 # Spyder project settings
 .spyderproject
 .spyproject
